@@ -9,7 +9,7 @@ from selenium.common.exceptions import TimeoutException
 import os
 
 # Streamlit app URL from environment variable (or default)
-STREAMLIT_URL = os.environ.get("STREAMLIT_APP_URL", "https://benson-mugure-portfolio.streamlit.app/")
+STREAMLIT_URL = os.environ.get("STREAMLIT_APP_URL", "https://churn2beta.streamlit.app/")
 
 def main():
     options = Options()
@@ -22,8 +22,8 @@ def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     try:
-        driver.get(https://churn2beta.streamlit.app/)
-        print(f"Opened {https://churn2beta.streamlit.app/}")
+        driver.get(STREAMLIT_URL)
+        print(f"Opened {STREAMLIT_URL}")
 
         wait = WebDriverWait(driver, 15)
         try:
